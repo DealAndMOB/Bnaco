@@ -1,0 +1,263 @@
+
+*{
+    box-sizing: border-box;
+}
+
+h1{font-size: 2.5em;}
+h2{font-size: 2em;}
+h3{font-size: 1.5em;}
+p{font-size: 1em;}
+li{font-size: 1em;}
+
+button{
+    font-size: 1.7rem;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 30px;
+    box-shadow: 10px 10px 10px rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+}
+
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;   
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.color-acento{ color: rgb(109, 12, 17);}
+
+header{
+    color: aliceblue;
+    background-color:rgb(0, 3, 3);
+    display: flex;
+    justify-content: space-between;
+    min-height: 70px;
+    align-items: center;
+    padding: 10px;
+}
+
+.logo img{
+    height: 50px;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+
+nav a{
+    color: aliceblue;
+    font-weight: bold;
+    padding-right: 20px;
+
+}
+
+nav a:hover{
+    color: rgb(190, 233, 0);
+}
+
+a{
+    color: black;
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration:rgb(13, 3, 150)
+}
+
+@media (max-width: 800px){
+    header{
+        flex-direction: column;
+    }
+
+    #hero h1{
+        font-size: 2rem;
+    }
+
+    nav{
+        padding: 10px 10px;
+    }
+}
+
+#hero, #SobreNosotros, #Nuestros-Servicios{
+    text-align: center;
+}
+
+#hero{
+    padding-top: 30px;
+}
+
+
+#hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 80vh;
+    color: aliceblue;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+    ),
+    url(RECURSOS/bancoFondo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#SobreNosotros .container{
+    text-align: center;
+    padding: 200px 12px;
+    
+}
+
+
+#Nuestros-Servicios{
+    background-color: rgb(0, 0, 0);
+    color: aliceblue;
+}
+
+#Nuestros-Servicios p{
+    display: none;
+}
+
+#Nuestros-Servicios .container{
+    padding: 150px 12px;
+}
+
+#Nuestros-Servicios h2{
+    margin-top: 0;
+}
+
+
+
+.carta:first-child{
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+    ),
+    url(RECURSOS/persona1.jpg);
+
+}
+
+#Nuestros-Servicios .carta{
+    background-size: cover;
+    padding: 50px;
+    margin: 30px;
+    border-radius: 15px;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.carta:nth-child(2){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+    ),
+    url(RECURSOS/persona2.jpg);
+   
+
+}
+
+.carta:nth-child(3){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+    ),
+    url(RECURSOS/persona3.jpg);
+
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+@media (max-width: 800px){
+    header{
+        font-size: .8em;
+    }
+    .container{
+        font-size: .9em;
+    }
+    
+    button{
+        font-size: 1em;
+    }
+}
+
+footer{
+    background-color: rgba(0, 0, 0, 0.514);
+}
+
+footer p{
+    margin: 0;
+    color: rgba(0, 0, 0, 0.404);
+}
+
+footer .container{
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+@media (min-width: 750px){
+
+    #SobreNosotros .container{
+        justify-content: center;
+        display: flex;
+    }
+    #SobreNosotros .image-container{
+        background-image: linear-gradient(
+            0deg,
+            rgba(0, 0, 0, 0),
+            rgba(0,0,0,0.5)
+        ), url(RECURSOS/ilustracion1.jpg);
+        background-size: cover;
+        background-position: center center;
+        height: 200px;
+        width: 300px;
+    }
+
+    #SobreNosotros .imagen{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        max-width: 600px;
+        width: 50%;
+        text-align: initial;
+        padding: 0px 30px;
+    }
+
+    #Nuestros-Servicios .SERVICIOS{
+        display: flex;
+        justify-content: center;
+    }
+
+    #Nuestros-Servicios p{
+        display: block;
+    }
+
+    #Nuestros-Servicios .carta{
+        padding: 40px;
+        margin: 20px;
+        
+    }
+    
+}
+
+button:hover{
+    background-color: rgb(195, 0, 255);
+}
